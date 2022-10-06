@@ -22,8 +22,7 @@ fetch("https://codeyourfuture.herokuapp.com/api/greetings")
     return response.text();
   })
   .then(function (greeting) {
-    // Write the code to display the greeting text here
-  });
   document.getElementById("greeting-text").innerText = greeting;
 })
 .catch((error) => console.log(error));
+
